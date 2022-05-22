@@ -1,0 +1,144 @@
+.about{display:block; margin: 0; padding:0; background: white;}
+
+/* le overlay de début*/
+.hero{
+    background-image: url('../img/wallpaper1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%; height:400px;
+}
+.blog-title{
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: sans-serif;
+}
+.blog-title h1{
+    font-size: 60px; 
+    color:black;
+    text-align: center;
+    margin:0;
+}
+.blog title p{
+    font-size: 20px;
+    color:white;
+    text-align: center; margin:0;
+    letter-spacing: 6px;
+    margin-top: 10px;
+}
+.overlay{
+    background: #D7D0D2;
+    width: 100%; height: 100%; 
+    position: absolute;
+    top:0; left:0; z-index: 1;
+    opacity: 60%;
+}
+
+/*our value section*/
+.valeur{background: #FEF1ED; padding:  8% 15%;}
+.valeur h2{color:black;}
+.carre{display:inline-block; width:20%; margin-right:4%; text-align: center;}
+.carre img{max-width: 20%; }
+.carre:hover{transform: scale(1.3);}
+
+
+/*le who are we*/
+.nous{ padding: 5% 20% 5% 20%;}
+.nous h1{text-align: center; font-size: 150%;}
+.nous p{ text-align: center; margin-top: 25px;}
+
+/*the team section*/
+.team {background-color: white; padding-bottom: 10%;}
+.team h1, .valeur h1{margin-bottom:5%; padding-top:5%; text-align: center; letter-spacing: 5px; }
+.container{margin:5% 5% 0 5%; }
+.rows{ display: flex; flex-direction: row; flex-wrap: wrap; width:100%;}
+.column{display:flex; flex-direction: column; flex-basis: 100%; flex:1; align-items: center;}
+.card{
+    width: 276px; height: 339px;
+    background: grey; 
+    margin: 2%; 
+   background: #A1C39A;
+}
+.card:hover{
+    box-shadow: 0px 0px 22px 8px rgba(0,0,0,0.78);
+}
+.card:hover .pic{ 
+    transform: scale(1.1);
+}
+.card:hover span{
+    text-decoration: underline;
+    vertical-align: middle;
+    
+}
+.card h2{letter-spacing: 4px; padding-bottom: 10px; text-align: center;}
+.card a img{ max-width: 20px; padding: 15px 5px 0px 35px;}
+.card span{
+    display:block; font-size: 12px; letter-spacing: 2px; color:#F1D2C0;
+}
+.pic{
+    max-width: 100px;
+    background: pink;
+    border-radius: 50%; 
+    position: relative;
+    top:-15px;   
+}
+
+.profile-info{
+    position:relative; 
+    padding: 25px;
+    margin-top: 15px; background: grey;
+    border-radius: 100% 0% 100% 0% / 30% 76% 24% 70% ;
+    text-align: justify; 
+}
+/*end of the team section*/
+
+/*telechargement*/
+.telecharge{padding:  5% 15%; background: #F1D2C0; min-height: 250px;}
+.telecharge h1{padding-bottom: 12px;}
+a button:hover{
+    background-color: #A1C39A;
+}
+button{
+    background-color: #DA3E64; 
+    color:white; padding: 10px 30px; 
+    border:none; cursor: pointer;
+    border-radius: 20%;
+    margin-bottom: 10px;
+}
+a button{text-decoration: none; color: white;}
+
+
+/*responsive*/
+@media screen and (max-width: 942px){
+    .carre{display:inherit; width: 50%; }
+    .list{display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+    .list > .carre{ margin-bottom: 10px;}
+}
+@media screen and (max-width: 699px){
+    .valeur img{max-width: 10%; margin-right:10px;}
+}
+@media screen and (max-width: 657px){
+    .valeur img{display: none;}
+}
+@media screen and (max-width: 554px){
+    .valeur h2{font-size: 20px;}
+}
+@media screen and (max-width: 480px){
+    .valeur h2{font-size: 100%;}
+    .list, .carre{display:flex;}
+    .list{flex-wrap: wrap;}
+    .list > div{ flex: 2 0 50%; justify-content: center;}
+    .valeur h2{font-size: 100%;}
+    .carre img{max-width: 10%;}
+    .blog-title h1{font-size: 45px;}
+    h1{font-size: 95%; font-weight: bold;}
+}
+@media screen and (max-width: 380px){
+    .blog-title h1{font-size: 35px;}
+    .card{width: 246px;height: 320px;}
+    .card p{font-size: 80%;}
+    .telecharge{padding-bottom: 5%;}
+}

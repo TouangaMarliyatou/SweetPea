@@ -1,0 +1,148 @@
+/* Importing the Roboto font from Google Fonts. */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+/* Set font of all elements to 'Roboto' */
+* {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+header{position: relative;}
+header svg{position: absolute; top:-90px; opacity: 80%;}
+main h1{text-align: center; margin-top: 5%; text-decoration: underline; font-weight: bolder; color:black; position: relative;}
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+.logo{top:-40px;}
+.contact{
+	background: white; margin-top: 0; padding-top: 0;   /* Set background color to #263238*/
+}
+
+/* Add styles to 'container' class */
+.container {
+    position:relative; left:30%; transform: translateX(-20%); 
+    top:10%;
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: white;
+	border-radius: 4px;
+    width:55%; height:40%;
+    box-shadow: -4px 9px 27px 0px rgba(0,0,0,1);
+}
+.form{width: 50%;}
+.texte{
+    font-size: 100%;
+    margin-bottom: 3%;
+}
+/* Add styles to 'label' selector */
+label {
+	font-size: 0.85em;
+    margin-left: 12px;
+    color: black;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background: pink;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #A5D6A7;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	background: red;
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
+}
+
+.contact-info{
+    position:absolute;
+    width: 45%; height:60%;
+    top:20%; left:60%;
+    background: #E6CDB5;
+    box-shadow: -4px 9px 27px 0px rgba(0,0,0,1);
+    padding: 7% 0 0 7%;
+}
+.tel{margin-top: 20px; font-weight: bold;}
+.mail{margin-bottom: 10px;}
+.contact-info p{ font-size: 90%; display: inline-block;}
+.contact-info img{
+    max-width: 20px; padding: 15px 5px 0px 35px;
+}
+
+
+/*responsive*/
+@media screen and (max-width:1000px){
+    .logo img {height:40%; width: 40%;}
+}
+@media screen and (max-width:800px){
+path{display:none;}
+.titre h1{text-align: center; font-size: 25px;}
+.container .texte p{font-size: 35px; text-align: center; transform: translateX(-10%); }
+    
+.container{width: 100%; top:60%; position:relative; box-shadow: none; left:10%; transform: translateX(-10%); padding-bottom: 5%;}
+.form{width: 100%;}
+
+.contact-info{position:relative; width: 70%;  top:50px; left:10%; }  
+
+.logo img {height:35%; width: 35%;}
+.logo{top:-20px;}
+}
+
+@media screen and (max-width:700px){
+.titre h1{font-size: 20px; position:relative;}
+.container{left:10%;}
+.container .texte p{font-size: 25px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+}
+
+@media screen and (max-width:590px){
+    .logo img {height:25%; width: 25%;}
+}
+@media screen and (max-width:447px){
+    .logo{display: none;}
+}
+@media screen and (max-width:380px){
+   .container .texte p{font-size: 20px;}
+}

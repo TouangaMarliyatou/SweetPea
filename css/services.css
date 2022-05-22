@@ -1,0 +1,76 @@
+body{
+    color:white;
+    margin:0;
+}
+
+/*overlay de debut*/
+.hero{
+    background-image: url('../img/wallpaper1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%; height:400px;
+}
+.blog-title{
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: sans-serif;
+}
+.blog-title h1{
+    font-size: 60px; 
+    color:black;
+    text-align: center;
+    margin:0;
+}
+.blog title p{
+    font-size: 20px;
+    color:white;
+    text-align: center; margin:0;
+    letter-spacing: 6px;
+    margin-top: 10px;
+}
+.overlay{
+    background: #D7D0D2;
+    width: 100%; height: 100%; 
+    position: absolute;
+    top:0; left:0; z-index: 1;
+    opacity: 60%;
+}
+/*-fin du overlay*/
+
+/*section des services*/
+hr{width: 25%; height:3px; background-color:pink; margin: auto; border: 0;}
+h3, p{color: black; text-align: justify; }
+section{text-align: center; padding:  5% 15% 5% 15%;}
+
+.part h1{margin-bottom: 3%; font-size: 170%;}
+.outil h1{margin-bottom: 3%; font-size: 170%;}
+.part h3{text-align: center;}
+.part .contain{display: flex; justify-content: space-between; }
+.outil .contain{display: flex; justify-content: space-between; }
+
+.part i{color:pink; margin-bottom: 5%;}
+.part .contain div{margin: 20px; width: 100%;}
+.outil .contain div{margin: 20px; width: 100%;}
+
+/*section nos outils*/
+.outil{background:#FEF1ED;}
+.outil #php i{color:black;}
+.outil #html i{color:orange;}
+.outil #css i{color:blue;}
+.outil #js i{color:#F4D40F;}
+/*responsive*/
+@media screen and (max-width: 900px){ 
+    .part h1{margin-left: 10%;}
+    .part .contain{ flex-direction: column;}
+    section{
+        text-align: center; 
+        padding:  5% 15% 5% 5%;
+    }
+    .outil .contain {display:flex; flex-flow: row wrap; margin-left: 12%;}
+    .outil .contain div{flex:1 0 20%;}
+    .outil h1{margin: 10% 0 5% 10%;}
+}

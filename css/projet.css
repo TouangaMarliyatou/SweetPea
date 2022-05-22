@@ -1,0 +1,85 @@
+
+.hero{
+    background-image: url('../img/wallpaper1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%; height:400px;
+}
+.blog-title{
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-family: sans-serif;
+}
+.blog-title h1{
+    font-size: 60px; 
+    color:black;
+    text-align: center;
+    margin:0;
+}
+.blog title p{
+    font-size: 20px;
+    color:white;
+    text-align: center; margin:0;
+    letter-spacing: 6px;
+    margin-top: 10px;
+}
+.overlay{
+    background: #D7D0D2;
+    width: 100%; height: 100%; 
+    position: absolute;
+    top:0; left:0; z-index: 1;
+    opacity: 60%;
+}
+
+/*section update*/
+.update{
+  padding:  5% 15% 8% 15%;
+}
+.update h3{ color:grey; opacity:0.5;}
+.update h1{font-weight: 400; font-size: 50px;}
+.update-img{padding: 5% 0 0 5%; position: relative;}
+.update-img p{width: 50%; text-align: justify;}
+.logo_update{ background: beige; position: absolute; top:20%; left:60%;}
+
+/*section objectif*/
+.objectif{background:#FEF1ED; padding: 5% 15% 8% 15%; }
+.avance{padding: 5% 15% 8% 15%;}
+hr{width: 100%;}
+section ul li{color:black;}
+.objectif ul li{list-style-type: square; font-size: 150%;}
+.obj{padding:5% 8%;}
+
+/*section avancement*/
+.avancement{padding: 5%; position: relative;}
+.avancement img{width:3%; height:3%;}
+.avancement-true{display: inline-block; width:50%;}
+.avancement-false{display: inline-block;}
+.avancement li{font-size: 125%;}
+/*telecharge*/
+.telecharge{padding:  0 15%; background:#FEF1ED; }
+
+button{
+    background-color: #DA3E64;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+/*responsive*/
+@media screen and (max-width: 956px){ 
+    .logo_update{position: relative; top:inherit; left: inherit; margin-top: 20px;}
+    .update-img p{width: 80%;}
+}
+@media screen and (max-width: 842px){ 
+    .avancement-true, .avancement-false{margin-bottom: 20px; width: 100%; align-content: center;}
+    .update-img p{width: 100%;}
+}
+@media screen and (max-width: 500px){ 
+    .logo_update{max-width: 85%;}
+}

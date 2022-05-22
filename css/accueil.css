@@ -1,0 +1,123 @@
+/*page d'accueil*/
+.accueil{background-image: linear-gradient(to left, white, white); width:100%; }
+.accueil header{ 
+    width: 100%; position: relative;
+    height:90%;
+    box-sizing: border-box;
+    background:linear-gradient(to right, #d4cac1, #dab19b, #e19481, #e77375, #e74b78);
+
+} /*couleur du header page d'accueil*/
+header svg{position: absolute; bottom:0;}
+.bienvenue{
+    color:white; font-size: 60px; font-size:60px; /*couleur du titre du header*/
+    text-align: center;
+    position:relative;top:45%;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.propos{background-color: #FEF1ED; position:relative}
+.accueil section{padding:  8% 20%; position: relative; min-height: 200px;}
+.contact p{margin-bottom: 5%;}
+
+div img{position: absolute; left:25%; top:20%; width:365px;}
+#image{position: absolute; top:20%; right:40%;}
+
+.conteneur{position: absolute; top:20%; left:50%; width:350px;margin-left: 150px; text-align: justify;}
+
+.conteneur h1, .conteneur2 h1{position: absolute; left:0; top:0; color:black; font-weight: bold; font-size: 35px;}
+
+.conteneur p, .conteneur2 p{position: absolute; top:75px; font-weight: bolder;}
+.conteneur button, .conteneur2 button{position: absolute; top:250px;}
+
+.conteneur2{position:absolute; top:20%; left:25%; width:350px; text-align: justify;}
+
+/*les boutons pages d'accueil*/
+button{background-color: #DA3E64; color:white; padding: 10px 30px; border:none; cursor: pointer;border-radius: 20%; }
+button a{text-decoration: none; color: white;}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1,0);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+.menu-accueil > svg {
+  display: block;
+  transform-origin: bottom;
+  animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+/*responsive*/
+@media screen and (max-width: 1080px){
+    section{min-height: 280px; margin-bottom: 5%;}
+   
+    .conteneur h1{left:17%;}
+    .conteneur{left:30%; padding-left: 75px;}
+    .reduce div img{left:10%;}
+    .conteneur img, #image{max-width: 250px;}
+    
+    .conteneur2{left:0; margin-left: 75px;}
+    .contact{margin-bottom: inherit; padding-bottom: 0;}
+    .propos{height:300px;}
+    #image{right:50%;}
+}
+
+@media screen and (max-width: 900px){
+    .conteneur h1, .conteneur2 h1{font-size: 25px;}
+    div img{width:300px;}
+    .conteneur, .conteneur2{width: 300px;}
+}
+
+@media screen and (max-width: 753px){
+    .conteneur h1, .conteneur2 h1{font-size: 19px;}
+    div img{width:275px;}
+    .conteneur, .conteneur2{width: 250px;}
+    .conteneur{left:25%;}
+    .reduce{height:300px;}
+}
+@media screen and (max-width: 653px){
+    .bienvenue{font-size: 45px;}
+     div img{width:230px;}
+    .conteneur, .conteneur2{width: 200px;}
+    .conteneur h1, .conteneur2 h1{font-size: 15px;}
+    .section p{font-size: 13px;}
+    .conteneur{left:20%;}
+}
+
+@media screen and (max-width: 653px){
+    div img{ position:relative;}
+    .reduce div img{
+        padding: 0;
+        margin:-5%;
+        left:inherit; width: inherit; max-width: 100%;
+    }
+    .conteneur, .conteneur2{position:relative; padding: 0; width: 100%;} 
+    .conteneur{left:inherit; margin-left: 0; font-size:100%; top:5%;}
+    .conteneur h1{font-size:100%; position: relative;}
+    .conteneur p{position:relative; top:20px;}
+    .accueil section{min-height: 600px;}
+    .conteneur button, .conteneur2 button{top:100px; font-size: 100%; position:relative;}
+    
+    .conteneur2{top:50%; margin-left: inherit;}
+    #image{right: inherit; position: relative;top:-20%; }
+    .conteneur2 p{position: relative; top:20px;}
+    .propos div img{
+        position:relative; 
+        padding: 0; left:inherit; 
+        width: inherit; 
+        max-width: 100%; margin:-5%;
+    }
+    .conteneur2 h1{font-size:100%; position: relative; left:17%;}
+}
+@media screen and (max-width: 560px){
+    .bienvenue{font-size: 35px;}
+}
+/*retirer la vague du header qd on passe en lanscape*/
+@media screen and (orientation:landscape) and (max-width: 1440px) and (max-height: 620px){
+    path{display:none;}  
+}
+@media screen and (orientation:landscape) and (max-width: 850px){
+     .bienvenue{font-size: 40px;}
+}
